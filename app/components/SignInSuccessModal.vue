@@ -1,7 +1,7 @@
 <template>
   <UModal v-model:open="isOpen" :ui="{ width: 'max-w-4xl' }">
     <template #body>
-      <div class="space-y-8 p-6">
+      <div class="">
         
         <!-- Header -->
         <header>
