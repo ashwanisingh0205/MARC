@@ -40,7 +40,6 @@
                   class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center shrink-0"
                 >
                   <Icon icon="tabler:check" class="w-4 h-4 text-white" />
-
                 </div>
                 <span class="text-gray-700">{{ feature }}</span>
               </div>
@@ -91,9 +90,8 @@
                     id="username"
                     placeholder="Enter username"
                     size="lg"
-                   icon="i-mdi-account"
+                    icon="i-mdi-account"
                     class="w-full [--ui-input-width:100%]"
-                    
                   />
                 </div>
 
@@ -134,7 +132,10 @@
                 >
                   <span class="flex w-full items-center justify-center gap-2">
                     Sign In to Dashboard
-                    <Icon icon="tabler:arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <Icon
+                      icon="tabler:arrow-right"
+                      class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    />
                   </span>
                 </UButton>
               </form>
@@ -163,14 +164,14 @@
     </div>
 
     <!-- Footer -->
-    <footer class="-mt-8 pb-6 text-center text-gray-500 text-sm w-full">
+    <footer class="app-footer">
       <p>© 2025 MARC. All rights reserved.</p>
-      <div class="mt-2 flex justify-center items-center gap-2 text-sm">
-        <a href="#" class="hover:text-gray-700">Privacy Policy</a>
+      <div class="app-footer-links">
+        <a href="#" class="app-footer-link">Privacy Policy</a>
         <span>•</span>
-        <a href="#" class="hover:text-gray-700">Terms of Service</a>
+        <a href="#" class="app-footer-link">Terms of Service</a>
         <span>•</span>
-        <a href="#" class="hover:text-gray-700">Help Center</a>
+        <a href="#" class="app-footer-link">Help Center</a>
       </div>
     </footer>
 
@@ -181,7 +182,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { Icon } from '@iconify/vue';
+import { Icon } from "@iconify/vue";
 
 const username = ref("");
 const password = ref("");
